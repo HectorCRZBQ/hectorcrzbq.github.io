@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil de GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url('https://img.freepik.com/fotos-premium/fondo-textura-tablon-madera-negra_293060-10645.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        h1 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 20px;
+            border: 5px solid white;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .wrap {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.606);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #0366d6;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #000; /* Color de texto para la descripción del proyecto */
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            color: #0366d6;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Github_Pages\877d502d-d1cc-43a9-b04f-c6a0f81032b0.jpg" alt="Imagen de perfil">
+    <h1>Hector de la Cruz Baquero</h1>
+    <p>¡Buenas! Actualmente soy un estudiante de Ingeniería Informatica </p>
+    <p>Me encuentro cursando el tercer año en la <a href="https://www.ucjc.edu/"> UCJC</a> </p>
+    <p>Encuentra más sobre mí en <a href="https://github.com/HectorCRZBQ">Linkedin</a>.</p>
+    <p> <a href="https://github.com/HectorCRZBQ">Mi curriculum</a></p>
+
+
+    <!-- Espacio para tus proyectos -->
+    <section class="aligncenter">
+        <div class="wrap">
+            <h2 style="color: #0366d6;">Mis Proyectos</h2>
+            <!-- Integra tus proyectos aquí -->
+            <!-- Por ejemplo: -->
+            <div class="project">
+                <h3 style="color: #0366d6;">Proyecto (3º año)</h3>
+                <p>Practica de Web Scrapping</p>
+                <a href="https://github.com/HectorCRZBQ/Web_Scrapping_rusteze">Ver más</a>
+            </div>
+            <div class="project">
+                <h3 style="color: #0366d6;">Nombre del proyecto 2</h3>
+                <p>Descripción breve del proyecto 2.</p>
+                <a href="enlace_al_proyecto2">Ver más</a>
+            </div>
+            <div class="project">
+                <h3 style="color: #0366d6;">Nombre del proyecto 3</h3>
+                <p>Descripción breve del proyecto 3.</p>
+                <a href="enlace_al_proyecto2">Ver más</a>
+            </div>
+            <div class="project">
+                <h3 style="color: #0366d6;">Nombre del proyecto 4</h3>
+                <p>Descripción breve del proyecto 4.</p>
+                <a href="enlace_al_proyecto2">Ver más</a>
+            </div>
+            <div class="project">
+                <h3 style="color: #0366d6;">Nombre del proyecto 5</h3>
+                <p>Descripción breve del proyecto 5.</p>
+                <a href="enlace_al_proyecto2">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <header role="banner">
+        <nav role="navigation">
+            <h3 style="color: #0366d6;"></h2>
+            <ul>
+                <li class="github">
+                    <a rel="external" href="https://github.com/HectorCRZBQ" title="Github">GitHub</a>
+                </li>
+                <li class="Instagram">
+                    <a rel="external" href="https://www.instagram.com/hector.baq/" title="Instagram">Instagram</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+    <footer role="contentinfo">
+        © 2023 Hector de la Cruz Baquero
+    </footer>
+</body>
+
+</html>
