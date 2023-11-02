@@ -5,158 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil de GitHub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-image: url('https://img.freepik.com/fotos-premium/fondo-textura-tablon-madera-negra_293060-10645.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #fff;
-        }
-
-        h1 {
-            color: #0366d6;
-            margin-bottom: 10px;
-        }
-
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            object-position: center;
-            margin-top: 20px;
-            border: 5px solid white;
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-
-        header {
-            background-color: #f2f2f2;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        .wrap {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.606);
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: #0366d6;
-            margin-bottom: 20px;
-        }
-
-        .project {
-            background-color: #f9f9f9;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            color: #000; /* Color de texto para la descripción del proyecto */
-        }
-
-        footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #f2f2f2;
-            color: #0366d6;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <img src="Github_Pages\877d502d-d1cc-43a9-b04f-c6a0f81032b0.jpg" alt="Imagen de perfil">
+    <header role="banner">
+        <nav role="navigation" class="navbar">
+            <ul>
+                <li><a href="#about">Acerca de mí</a></li>
+                <li><a href="#projects">Mis Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="https://github.com/HectorCRZBQ" target="_blank" title="Github">
+                        <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Github Logo" width="20" height="20">
+                    </a></li>
+                <li><a href="https://www.instagram.com/hector.baq/" target="_blank" title="Instagram">
+                        <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png" alt="Instagram Logo" width="20" height="20">
+                    </a></li>
+            </ul>
+        </nav>
+    </header
+
+    <img src="877d502d-d1cc-43a9-b04f-c6a0f81032b0.jpg" alt="Imagen de perfil">
     <h1>Hector de la Cruz Baquero</h1>
-    <p>¡Buenas! Actualmente soy un estudiante de Ingeniería Informatica </p>
-    <p>Me encuentro cursando el tercer año en la <a href="https://www.ucjc.edu/"> UCJC</a> </p>
-    <p>Encuentra más sobre mí en <a href="https://github.com/HectorCRZBQ">Linkedin</a>.</p>
-    <p> <a href="https://github.com/HectorCRZBQ">Mi curriculum</a></p>
+    <p>¡Buenas! Soy un estudiante de Ingeniería Informática en la <a href="https://www.ucjc.edu/">UCJC</a>.</p>
+    <p>Encuentra más sobre mí en <a href="https://www.linkedin.com/in/hectorcrzbq/">LinkedIn</a>.</p>
+    <p><a href="enlace_a_tu_curriculum">Mi curriculum</a></p>
 
-
-    <!-- Espacio para tus proyectos -->
-    <section class="aligncenter">
+    <section id="projects" class="aligncenter">
         <div class="wrap">
-            <h2 style="color: #0366d6;">Mis Proyectos</h2>
-            <!-- Integra tus proyectos aquí -->
-            <!-- Por ejemplo: -->
+            <h2>Mis Proyectos</h2>
             <div class="project">
-                <h3 style="color: #0366d6;">Proyecto (3º año)</h3>
-                <p>Practica de Web Scrapping</p>
+                <h3>Proyecto (3º año)</h3>
+                <p>Práctica de Web Scrapping</p>
                 <a href="https://github.com/HectorCRZBQ/Web_Scrapping_rusteze">Ver más</a>
             </div>
             <div class="project">
-                <h3 style="color: #0366d6;">Nombre del proyecto 2</h3>
+                <h3>Nombre del proyecto 2</h3>
                 <p>Descripción breve del proyecto 2.</p>
                 <a href="enlace_al_proyecto2">Ver más</a>
             </div>
             <div class="project">
-                <h3 style="color: #0366d6;">Nombre del proyecto 3</h3>
+                <h3>Nombre del proyecto 3</h3>
                 <p>Descripción breve del proyecto 3.</p>
-                <a href="enlace_al_proyecto2">Ver más</a>
+                <a href="enlace_al_proyecto3">Ver más</a>
             </div>
             <div class="project">
-                <h3 style="color: #0366d6;">Nombre del proyecto 4</h3>
+                <h3>Nombre del proyecto 4</h3>
                 <p>Descripción breve del proyecto 4.</p>
-                <a href="enlace_al_proyecto2">Ver más</a>
+                <a href="enlace_al_proyecto4">Ver más</a>
             </div>
             <div class="project">
-                <h3 style="color: #0366d6;">Nombre del proyecto 5</h3>
+                <h3>Nombre del proyecto 5</h3>
                 <p>Descripción breve del proyecto 5.</p>
-                <a href="enlace_al_proyecto2">Ver más</a>
+                <a href="enlace_al_proyecto5">Ver más</a>
             </div>
         </div>
     </section>
 
-    <header role="banner">
-        <nav role="navigation">
-            <h3 style="color: #0366d6;"></h2>
-            <ul>
-                <li class="github">
-                    <a rel="external" href="https://github.com/HectorCRZBQ" title="Github">GitHub</a>
-                </li>
-                <li class="Instagram">
-                    <a rel="external" href="https://www.instagram.com/hector.baq/" title="Instagram">Instagram</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <section id="contact" class="contact-form">
+        <h2>Contacto</h2>
+        <form action="send_email.php" id="contactForm" onsubmit="return validateForm()" method="POST">
+            <input type="text" id="fname" name="fname" required placeholder="Nombre"><br>
+            <input type="text" id="lname" name="lname" required placeholder="Apellido"><br>
+            <input type="text" id="phone" name="phone" required placeholder="Número de teléfono"><br>
+            <input type="text" id="dni" name="dni" required pattern="[0-9]{8}[A-Za-z]{1}" title="El DNI debe contener 8 dígitos seguidos de una letra" placeholder="DNI"><br>
+            <textarea id="message" name="message" rows="4" cols="50" onkeyup="countWords(this)" placeholder="Mensaje"></textarea>
+            <p id="wordCount">0 palabras</p><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <script>
+        function validateForm() {
+            let dni = document.getElementById("dni").value;
+            let dniRegex = /^[0-9]{8}[A-Za-z]{1}$/;
+            if (!dni.match(dniRegex)) {
+                alert("Por favor, introduce un DNI válido.");
+                return false;
+            }
+            return true;
+        }
+
+        function countWords(element) {
+            let message = element.value;
+            message = message.trim();
+            let words = message.split(/\s+/).filter(function (word) {
+                return word.length > 0;
+            }).length;
+            document.getElementById("wordCount").innerText = words + " palabras";
+        }
+    </script>
 
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
