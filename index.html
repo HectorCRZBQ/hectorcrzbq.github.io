@@ -9,105 +9,68 @@
 </head>
 
 <body>
-    <header role="banner">
-        <nav role="navigation" class="navbar">
+
+    <header class="navbar">
+        <nav class="menu">
             <ul>
-                <li><a href="#about">Acerca de mí</a></li>
-                <li><a href="#projects">Mis Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="https://github.com/HectorCRZBQ" target="_blank" title="Github">
-                        <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="Github Logo" width="20" height="20">
-                    </a></li>
-                <li><a href="https://www.instagram.com/hector.baq/" target="_blank" title="Instagram">
-                        <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png" alt="Instagram Logo" width="20" height="20">
-                    </a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/projects/projects.html">Mis Proyectos</a></li>
+                <li><a href="/about/about.html">Sobre mí</a></li>
+                <li><a href="/contact/contact.html">Contacto</a></li>
+                <li>
+                    <a href="https://github.com/HectorCRZBQ" target="_blank" title="Github">
+                        <img src="/app_logos/github.png" alt="Github Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/hector.baq/" target="_blank" title="Instagram">
+                        <img src="/app_logos/instagram.png" alt="Instagram Logo">
+                    </a>
+                </li>
             </ul>
         </nav>
-    </header
+    </header>
 
-    <img src="877d502d-d1cc-43a9-b04f-c6a0f81032b0.jpg" alt="Imagen de perfil">
-    <h1>Hector de la Cruz Baquero</h1>
-    <p>¡Buenas! Soy un estudiante de Ingeniería Informática en la <a href="https://www.ucjc.edu/">UCJC</a>.</p>
-    <p>Encuentra más sobre mí en <a href="https://www.linkedin.com/in/hectorcrzbq/">LinkedIn</a>.</p>
-    <p><a href="enlace_a_tu_curriculum">Mi curriculum</a></p>
+    <main>
+        <h1>Héctor de la Cruz Baquero</h1>
+        <img src="index\images\877d502d-d1cc-43a9-b04f-c6a0f81032b0.jpg" alt="Imagen de perfil">
+        <p>¡Buenas! Soy un estudiante de Ingeniería Informática en la <a href="https://www.ucjc.edu/">UCJC</a>.</p>
+        <p>Encuentra más sobre mí en <a href="https://www.linkedin.com/in/h%C3%A9ctor-undefined-ba193429b/">LinkedIn</a>.</p>
+        <p><a href="enlace_a_tu_curriculum">Mi curriculum</a></p>
 
-    <section id="projects" class="aligncenter">
-        <div class="wrap">
-            <h2>Mis Proyectos</h2>
-            <div class="project">
-                <h3>Proyecto (3º año)</h3>
-                <p>Práctica de Web Scrapping</p>
-                <a href="https://github.com/HectorCRZBQ/Web_Scrapping_rusteze">Ver más</a>
+        <section id="projects" class="aligncenter">
+            <div class="wrap">
+                <h2>Proyectos destacados</h2>
+                <div class="project">
+                    <h3>Scraping</h3>
+                    <p>Web Scraping a MARCA</p>
+                    <a href="https://github.com/HectorCRZBQ/Web_Scraping">Ver más</a>
+                </div>
+                <div class="project">
+                    <h3>Meditación guiada en VR</h3>
+                    <p>Realizada en colaboración con <a href="https://github.com/josesuarez03">josesuarez03</a></p>
+                    <a href="https://github.com/josesuarez03/meditacion_guiada">Ver más</a>
+                </div>
+                <div class="project">
+                    <h3>BOT de Telegram de F1</h3>
+                    <p>Realizada en colaboración con <a href="https://github.com/XxIMDARIOxX">XxIMDARIOxX</a></p>
+                    <a href="https://github.com/HectorCRZBQ/Bot_Telegram">Ver más</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Nombre del proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
-                <a href="enlace_al_proyecto2">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Nombre del proyecto 3</h3>
-                <p>Descripción breve del proyecto 3.</p>
-                <a href="enlace_al_proyecto3">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Nombre del proyecto 4</h3>
-                <p>Descripción breve del proyecto 4.</p>
-                <a href="enlace_al_proyecto4">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Nombre del proyecto 5</h3>
-                <p>Descripción breve del proyecto 5.</p>
-                <a href="enlace_al_proyecto5">Ver más</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact-form">
-        <h2>Contacto</h2>
-        <form action="send_email.php" id="contactForm" onsubmit="return validateForm()" method="POST">
-            <input type="text" id="fname" name="fname" required placeholder="Nombre"><br>
-            <input type="text" id="lname" name="lname" required placeholder="Apellido"><br>
-            <input type="text" id="phone" name="phone" required placeholder="Número de teléfono"><br>
-            <input type="text" id="dni" name="dni" required pattern="[0-9]{8}[A-Za-z]{1}" title="El DNI debe contener 8 dígitos seguidos de una letra" placeholder="DNI"><br>
-            <textarea id="message" name="message" rows="4" cols="50" onkeyup="countWords(this)" placeholder="Mensaje"></textarea>
-            <p id="wordCount">0 palabras</p><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+    </main>
 
-    <script>
-        function validateForm() {
-            let dni = document.getElementById("dni").value;
-            let dniRegex = /^[0-9]{8}[A-Za-z]{1}$/;
-            if (!dni.match(dniRegex)) {
-                alert("Por favor, introduce un DNI válido.");
-                return false;
-            }
-            return true;
-        }
+    <footer>
+        © 2023 Hector de la Cruz Baquero
+    </footer>
 
-        function countWords(element) {
-            let message = element.value;
-            message = message.trim();
-            let words = message.split(/\s+/).filter(function (word) {
-                return word.length > 0;
-            }).length;
-            document.getElementById("wordCount").innerText = words + " palabras";
-        }
-    </script>
-
-    <!-- Required -->
     <script src="static/js/webslides.js"></script>
     <script>
         window.ws = new WebSlides();
     </script>
-
-    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
 
-    <footer role="contentinfo">
-        © 2023 Hector de la Cruz Baquero
-    </footer>
 </body>
 
 </html>
