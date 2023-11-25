@@ -184,6 +184,21 @@ footer {
     background-color: #024785;
 }
 
+.contact-form input[type="reset"] {
+    margin-left: 120px;
+    background-color: #d63031; /* Cambiar a rojo */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form input[type="reset"]:hover {
+    background-color: #b12427; /* Cambiar tono al pasar el cursor */
+}
+
 /* Estilos para dispositivos más pequeños como teléfonos móviles */
 @media screen and (max-width: 768px) {
     /* Estilos para la barra de navegación en pantallas más pequeñas */
