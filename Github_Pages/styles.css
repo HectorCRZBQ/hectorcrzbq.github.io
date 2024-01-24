@@ -1,0 +1,295 @@
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-oscuro-abstracto_1048-1920.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1706122800&semt=ais");
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+    text-align: center;
+    margin-top: 100px;
+    margin: 0;
+    background-color: rgb(115, 115, 115);
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+main {
+    padding-top: 150px; 
+}
+
+h1 {
+    color: #0366d6;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 20px;
+    border: 5px solid white;
+}
+
+.menu img {
+    width: 34px; 
+    height: 35px;
+}
+
+.project_images img {
+    border-radius: 0;
+    clip-path: none;
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px; 
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7% ;
+    z-index: 999;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin-right: 35px;
+    display: flex; 
+    align-items: center; 
+}
+
+nav ul li a {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5px; 
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #0366d6;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #000;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #0366d6;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px; 
+    border-radius: 10px; 
+    margin-top: 50px;
+}
+
+.contact-form h2 {
+    color: #0366d6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #0366d6;
+    color: #fff;
+    border: none;
+    padding: 15px 25px; /* Botón más grande */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamaño de fuente más grande */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #024785;
+}
+
+.contact-form input[type="reset"] {
+    margin-left: 120px;
+    background-color: #d63031; /* Cambiar a rojo */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form input[type="reset"]:hover {
+    background-color: #b12427; /* Cambiar tono al pasar el cursor */
+}
+
+/* Estilos para dispositivos más pequeños como teléfonos móviles */
+@media screen and (max-width: 768px) {
+    /* Estilos para la barra de navegación en pantallas más pequeñas */
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f2f2f2;
+        text-align: center;
+        z-index: 999;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu li:last-child {
+        margin-bottom: 0;
+    }
+
+    .menu a {
+        color: #0366d6;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .menu img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Ajustes para otros elementos en pantallas más pequeñas */
+    body {
+        padding-top: 50px; /* Añadir espacio para la barra de navegación */
+    }
+
+    main {
+        padding-top: 100px; /* Ajustar espacio superior del contenido principal */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir tamaño del encabezado */
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        margin-top: 10px; /* Ajustar margen superior */
+    }
+
+    .contact-form {
+        max-width: 90%; /* Reducir ancho del formulario de contacto */
+        padding: 20px; /* Ajustar el espaciado del formulario */
+        margin-top: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 24px; /* Reducir tamaño del encabezado del formulario */
+        margin-bottom: 15px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+        padding: 10px; /* Ajustar el espaciado de los campos del formulario */
+        margin-top: 8px;
+        margin-bottom: 15px;
+        font-size: 14px; /* Reducir tamaño de fuente de los campos */
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 12px 20px; /* Ajustar el tamaño del botón */
+        font-size: 16px; /* Reducir tamaño de fuente del botón */
+    }
+}

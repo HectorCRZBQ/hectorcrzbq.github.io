@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="/styles.css">
+
+    <title>Héctor de la Cruz Baquero</title>
+    </head>
+    <body>
+
+        <header class="navbar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/projects/projects.html">Mis Proyectos</a></li>
+                    <li><a href="/about/about.html">Sobre mí</a></li>
+                    <li><a href="/contact/contact.html">Contacto</a></li>
+                    <li>
+                        <a href="https://github.com/HectorCRZBQ" target="_blank" title="Github">
+                            <img src="/app_logos/github.png" alt="Github Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/hector.baq/" target="_blank" title="Instagram">
+                            <img src="/app_logos/instagram.png" alt="Instagram Logo">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="contact" class="contact-form">
+                <h2>Contacto</h2>
+                <form action="https://formspree.io/f/meqbboky" method="POST">
+                    <input type="text" name="fname" required placeholder="Nombre"><br>
+                    <input type="text" name="lname" required placeholder="Apellido"><br>
+                    <input type="text" name="phone" required placeholder="Número de teléfono"><br>
+                    <input type="text" name="dni" required pattern="[0-9]{8}[A-Za-z]{1}" title="El DNI debe contener 8 dígitos seguidos de una letra" placeholder="DNI"><br>
+                    <textarea name="message" rows="4" cols="50" placeholder="Mensaje"></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar Campos">
+                </form>
+            </section>
+        </main>
+
+    </body>
+
+    <footer>
+        © 2023 Hector de la Cruz Baquero
+    </footer>
+
+</html>
