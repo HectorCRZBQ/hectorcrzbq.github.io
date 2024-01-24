@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://img.freepik.com/foto-gratis/fondo-oscuro-abstracto_1048-1920.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1706122800&semt=ais");
+    background-image: url("https://artistsatrisk.org/wp-content/uploads/2015/02/background.jpg");
     background-size: cover;
     background-position: center; 
     background-attachment: fixed; 
@@ -171,10 +171,10 @@ footer {
     background-color: #0366d6;
     color: #fff;
     border: none;
-    padding: 15px 25px; /* Botón más grande */
+    padding: 15px 25px; 
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-size: 18px;
 }
 
 .contact-form input[type="submit"]:hover {
