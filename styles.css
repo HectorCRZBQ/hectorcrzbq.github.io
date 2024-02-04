@@ -1,12 +1,11 @@
 body {
-    background-image: url("https://artistsatrisk.org/wp-content/uploads/2015/02/background.jpg");
+    background-image: url("/background/background_image.svg");
     background-size: cover;
     background-position: center; 
-    background-attachment: fixed; 
     text-align: center;
     margin-top: 100px;
     margin: 0;
-    background-color: rgb(115, 115, 115);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     padding-top: 50px;
     padding-bottom: 60px;
@@ -17,13 +16,30 @@ main {
 }
 
 h1 {
-    color: #0366d6;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10 px;
+    font-family: "Times New Roman", Times, serif;
     font-size: 32px;
     text-transform: uppercase;
 }
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10 px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10 px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+}
+
 
 img {
     border-radius: 50%;
@@ -69,10 +85,14 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 7% ;
+    height: 7%;
     z-index: 999;
     background-color: #f2f2f2;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 nav ul {
@@ -84,15 +104,16 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 35px;
+    margin-right: 24px;
     display: flex; 
     align-items: center; 
 }
 
 nav ul li a {
-    color: #0366d6;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     margin-left: 5px; 
 }
 
@@ -106,11 +127,6 @@ section {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 5px;
-}
-
-h2 {
-    color: #0366d6;
-    margin-bottom: 20px;
 }
 
 .project {
@@ -197,15 +213,31 @@ footer {
 }
 
 /* Estilos para dispositivos más pequeños como teléfonos móviles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 359px) {
     /* Estilos para la barra de navegación en pantallas más pequeñas */
     .navbar {
-        position: relative;
+        height: auto;
+        flex-direction: column;
+        position: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 10px;
         height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
     }
 
     .menu-toggle {
@@ -215,7 +247,7 @@ footer {
 
     .menu {
         display: none;
-        position: absolute;
+        position: relative;
         top: 100%;
         left: 0;
         width: 100%;
@@ -231,7 +263,8 @@ footer {
     }
 
     .menu li {
-        display: block;
+        display: flex;
+        font-size: 6px;
         margin-bottom: 10px;
     }
 
@@ -240,9 +273,11 @@ footer {
     }
 
     .menu a {
-        color: #0366d6;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 6px;
+        margin-left: 5px; 
     }
 
     .menu img {
@@ -252,44 +287,44 @@ footer {
 
     /* Ajustes para otros elementos en pantallas más pequeñas */
     body {
-        padding-top: 50px; /* Añadir espacio para la barra de navegación */
+        padding-top: 0px; /* Añadir espacio para la barra de navegación */
     }
 
     main {
-        padding-top: 100px; /* Ajustar espacio superior del contenido principal */
+        padding-top: 80px; /* Ajustar espacio superior del contenido principal */
     }
 
     h1 {
-        font-size: 24px; /* Reducir tamaño del encabezado */
+        font-size: 20px; /* Reducir tamaño del encabezado */
     }
 
     img {
-        width: 150px;
-        height: 150px;
-        margin-top: 10px; /* Ajustar margen superior */
+        width: 120px;
+        height: 120px;
+        margin-top: 20px; /* Ajustar margen superior */
     }
 
     .contact-form {
         max-width: 90%; /* Reducir ancho del formulario de contacto */
-        padding: 20px; /* Ajustar el espaciado del formulario */
-        margin-top: 20px;
+        padding: 15px; /* Ajustar el espaciado del formulario */
+        margin-top: 15px;
     }
 
     .contact-form h2 {
-        font-size: 24px; /* Reducir tamaño del encabezado del formulario */
-        margin-bottom: 15px;
+        font-size: 20px; /* Reducir tamaño del encabezado del formulario */
+        margin-bottom: 10px;
     }
 
     .contact-form input[type="text"],
     .contact-form textarea {
-        padding: 10px; /* Ajustar el espaciado de los campos del formulario */
-        margin-top: 8px;
-        margin-bottom: 15px;
-        font-size: 14px; /* Reducir tamaño de fuente de los campos */
+        padding: 8px; /* Ajustar el espaciado de los campos del formulario */
+        margin-top: 6px;
+        margin-bottom: 10px;
+        font-size: 12px; /* Reducir tamaño de fuente de los campos */
     }
 
     .contact-form input[type="submit"] {
-        padding: 12px 20px; /* Ajustar el tamaño del botón */
+        padding: 10px 20px; /* Ajustar el tamaño del botón */
         font-size: 16px; /* Reducir tamaño de fuente del botón */
     }
 }
